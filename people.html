@@ -2,56 +2,143 @@
 <html>
 <head>
     <title>People | Climate Dynamics Lab</title>
-    <!-- Same head content as research.html -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body class="no-sidebar">
-<div id="page-wrapper">
+    <div id="page-wrapper">
 
-    <!-- Header with Navigation (same as research.html) -->
-
-    <!-- Main -->
-    <div class="wrapper style1">
-        <div class="container">
-            <article id="main" class="special">
+        <!-- Header -->
+        <div id="header">
+            <div class="inner">
                 <header>
-                    <h2>Our Team</h2>
-                    <p>Meet the researchers behind our work</p>
+                    <h1><a href="index.html" id="logo">Climate Dynamics Lab</a></h1>
+                    <hr />
+                    <p>Centre for Atmospheric Sciences, IIT Delhi</p>
                 </header>
-                
-                <section id="pi">
-                    <h3>Principal Investigator</h3>
-                    <div class="team-member">
-                        <img src="images/sandeep.jpg" alt="Dr. S. Sandeep" class="profile-image" />
-                        <div class="bio">
-                            <h4>Dr. S. Sandeep</h4>
-                            <p>Associate Professor<br>
-                            PhD, IIT Kharagpur<br>
-                            Research interests: Monsoon dynamics, Climate modeling</p>
-                        </div>
-                    </div>
-                </section>
+                <footer>
+                    <a href="#main" class="button circled scrolly">Meet the Team</a>
+                </footer>
+            </div>
 
-                <section id="phd">
-                    <h3>PhD Students</h3>
-                    <div class="team-grid">
-                        <!-- Repeat for each student -->
-                        <div class="team-member">
-                            <img src="images/student1.jpg" alt="Student Name" />
-                            <h4>Student Name</h4>
-                            <p>Research Topic</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="ms">
-                    <h3>MS Students</h3>
-                    <!-- Similar structure as PhD section -->
-                </section>
-            </article>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li class="current"><a href="people.html">People</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+
+        <!-- Main Content -->
+        <section class="wrapper style1">
+            <div class="container">
+                <header class="major">
+                    <h2>Our Team</h2>
+                    <p>Meet the researchers driving innovation at the Climate Dynamics Lab</p>
+                </header>
+
+                <div class="team-grid">
+
+                    <!-- PI -->
+                    <div class="team-member">
+                        <img src="images/prof_sandeep.png" alt="Dr. S. Sandeep" class="profile-image" />
+                        <h3>Dr. S. Sandeep</h3>
+                        <h4>Associate Professor, PI</h4>
+                        <p class="bio">
+                            Dr. Sandeep leads the Climate Dynamics Lab and specializes in Indian monsoon dynamics, climate modeling, and AI applications in atmospheric science. He holds a PhD from IIT Kharagpur and has conducted postdoctoral research at IISc, Oslo, and NYU Abu Dhabi.
+                        </p>
+                    </div>
+
+                    <!-- Example Student -->
+                    <div class="team-member">
+                        <img src="images/placeholder01.jpg" alt="Researcher 1" class="profile-image" />
+                        <h3>John Doe</h3>
+                        <h4>Ph.D. Scholar</h4>
+                        <p class="bio">
+                            Working on AI-based monsoon forecasting and detection of low-pressure systems using deep learning models.
+                        </p>
+                    </div>
+
+                    <!-- Add more team members here -->
+                    <!-- Copy structure above for each -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer (Same as index.html) -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Contact Info -->
+                    <section class="col-6 col-12-mobile">
+                        <header>
+                            <h2 class="icon solid fa-envelope circled"><span class="label">Contact</span></h2>
+                        </header>
+                        <ul class="divided">
+                            <li>
+                                <article class="contact-info">
+                                    <h3>Email</h3>
+                                    <p>climate.lab@cas.iitd.ac.in</p>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="contact-info">
+                                    <h3>Address</h3>
+                                    <p>Centre for Atmospheric Sciences<br>IIT Delhi, Hauz Khas<br>New Delhi - 110016, India</p>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Social Links -->
+                    <section class="col-6 col-12-mobile">
+                        <header>
+                            <h2 class="icon solid fa-share-alt circled"><span class="label">Social</span></h2>
+                        </header>
+                        <div class="social-links">
+                            <p>Connect with us on academic and professional networks:</p>
+                            <ul class="icons">
+                                <li><a href="#" class="icon brands fa-google"><span class="label">Google Scholar</span></a></li>
+                                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="#" class="icon brands fa-researchgate"><span class="label">ResearchGate</span></a></li>
+                                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright">
+                            <ul class="menu">
+                                <li>&copy; Climate Dynamics Lab, IIT Delhi. All rights reserved.</li>
+                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Footer and Scripts -->
-</div>
+    <!-- Scripts (same as index.html) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
