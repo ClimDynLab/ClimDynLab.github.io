@@ -12,59 +12,55 @@
 <body class="is-preload">
   <div id="page-wrapper">
 
-    {# ------------------------------------------------------------- #}
-    {# CONDITIONAL SITE HEADER: This block only appears on the HOME page #}
-    {# ------------------------------------------------------------- #}
-    {% if page.url == '/' %}
-      <div id="header">
-        <div class="inner">
-          <header>
-            <h1><a href="{{ '/' | relative_url }}" id="logo">{{ site.title }}</a></h1>
-            <hr />
+    <!-- SITE HEADER: always shows -->
+    <div id="header">
+      <div class="inner">
+        <header>
+          <h1>
+            <a href="{{ '/' | relative_url }}" id="logo">
+              {% if page.url == '/' %}
+                {{ site.title }}
+              {% else %}
+                {{ page.title }}
+              {% endif %}
+            </a>
+          </h1>
+          <hr />
+          {% if page.url == '/' %}
             <p>{{ site.subtitle }}</p>
-          </header>
-        </div>
-      </div>
-    {% endif %}
-
-    {# ------------------------------------------------------------- #}
-    {# ALWAYS PRESENT NAVIGATION BAR #}
-    {# Moved outside the conditional #header div #}
-    {# ------------------------------------------------------------- #}
-    <nav id="nav">
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
-        <li><a href="{{ '/people.html' | relative_url }}">People</a></li>
-        <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-        <li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
-        <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
-        <li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
-        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
-      </ul>
-    </nav>
-
-    {# ------------------------------------------------------------- #}
-    {# PAGE BANNER HEADER: for non-home pages. Only appears on sub-pages #}
-    {# ------------------------------------------------------------- #}
-    {% unless page.url == '/' %} {# This ensures it DOES NOT show on the homepage #}
-      <header class="wrapper style1 special">
-        <div class="container" style="text-align: left;">
-          <h1>{{ page.title }}</h1>
-          {% if page.subtitle %}
-            <p>{{ page.subtitle }}</p>
+          {% else %}
+            {% if page.subtitle %}
+              <p>{{ page.subtitle }}</p>
+            {% endif %}
           {% endif %}
-        </div>
-      </header>
-    {% endunless %}
+        </header>
+      </div>
 
+      <!-- Navigation Bar -->
+      <nav id="nav">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
+          <li><a href="{{ '/people.html' | relative_url }}">People</a></li>
+          <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+          <li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
+          <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
+          <li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
+          <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
     <main id="main-content">
       {{ content }}
     </main>
 
+    <!-- FOOTER -->
     <div id="footer">
       <div class="container">
         <div class="row">
+          <!-- Contact Info -->
           <section class="col-4 col-12-mobile">
             <header>
               <h2>Contact</h2>
@@ -73,6 +69,7 @@
             <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
           </section>
 
+          <!-- Links -->
           <section class="col-4 col-12-mobile">
             <header>
               <h2>Links</h2>
@@ -85,6 +82,7 @@
             </ul>
           </section>
 
+          <!-- Social -->
           <section class="col-4 col-12-mobile">
             <header>
               <h2>Follow</h2>
@@ -120,6 +118,7 @@
 
   </div>
 
+  <!-- Scripts -->
   <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/jquery.dropotron.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/jquery.scrolly.min.js' | relative_url }}"></script>
