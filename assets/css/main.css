@@ -1,6 +1,212 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 
+/* 
+   Climate Dynamics Lab Custom Styles 
+   Based on Helios by HTML5 UP
+*/
+
+/* Team Members */
+.team-member {
+    margin-bottom: 3em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5em;
+    border: 5px solid #f0f4f4;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.team-member .bio {
+    max-width: 600px;
+}
+
+/* Research Highlights */
+.research-highlight {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-highlight:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.research-highlight img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.research-highlight-content {
+    padding: 1.5em;
+}
+
+/* Publications */
+.publications-list {
+    list-style: none;
+    padding: 0;
+}
+
+.publications-list li {
+    padding: 1.5em 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.publications-list li:last-child {
+    border-bottom: none;
+}
+
+.publication-title {
+    font-weight: 600;
+    color: #483949;
+    margin-bottom: 0.5em;
+}
+
+.publication-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 0.5em;
+}
+
+.publication-authors {
+    font-style: italic;
+}
+
+.publication-links a {
+    margin-right: 1em;
+    color: #df7366;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #df7366;
+    outline: none;
+}
+
+.contact-form button {
+    background: #df7366;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #ef8376;
+}
+
+/* Lab Colors */
+:root {
+    --lab-primary: #2b5876;
+    --lab-secondary: #4e4376;
+    --lab-accent: #df7366;
+    --lab-light: #f0f4f4;
+}
+
+/* Header Customization */
+#header {
+    background: linear-gradient(135deg, var(--lab-primary), var(--lab-secondary));
+}
+
+#header h1 {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Button Customization */
+.button {
+    background: var(--lab-primary);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: var(--lab-secondary);
+}
+
+/* Carousel Customization */
+.carousel article {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 736px) {
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .research-highlight {
+        margin-bottom: 2em;
+    }
+}
+
+/* Accessibility Improvements */
+a:focus, button:focus {
+    outline: 2px solid var(--lab-accent);
+    outline-offset: 2px;
+}
+
+img:not([alt]) {
+    border: 2px dashed red;
+}
+
+/* Keep all original Helios styles below this line */
+/* ... [rest of the original Helios CSS remains unchanged] ... */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url("fontawesome-all.min.css");
+
 /*
 	Helios by HTML5 UP
 	html5up.net | @ajlkn
