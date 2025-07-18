@@ -9,23 +9,12 @@
   <noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
 </head>
 
-<body class="is-preload {% if page.url == '/' %}home{% endif %}">
+<body class="is-preload">
   <div id="page-wrapper">
 
-    <!-- HOME PAGE HEADER -->
-    {% if page.url == '/' %}
-      <div id="header">
-        <div class="inner">
-          <header>
-            <h1><a href="{{ '/' | relative_url }}" id="logo">{{ site.title }}</a></h1>
-            <hr />
-            <p>{{ site.subtitle }}</p>
-          </header>
-        </div>
-      </div>
-    {% endif %}
-
-    <!-- NAVIGATION -->
+    {# ------------------------------------------------------------- #}
+    {# ALWAYS PRESENT NAVIGATION BAR #}
+    {# ------------------------------------------------------------- #}
     <nav id="nav">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Home</a></li>
@@ -39,24 +28,24 @@
       </ul>
     </nav>
 
-    <!-- SUBPAGE BANNER HEADER -->
-    {% unless page.url == '/' %}
-      <header class="wrapper style1 special">
-        <div class="container" style="text-align: left;">
-          <h1>{{ page.title }}</h1>
-          {% if page.subtitle %}
-            <p>{{ page.subtitle }}</p>
-          {% endif %}
-        </div>
-      </header>
-    {% endunless %}
+    {# ------------------------------------------------------------- #}
+    {# SITE HEADER: Home uses default style, subpages use .subpage-banner #}
+    {# ------------------------------------------------------------- #}
+    <header class="wrapper style1 special {% unless page.url == '/' %}subpage-banner{% endunless %}">
+      <div class="container">
+        <h1>{{ page.title | default: site.title }}</h1>
+        {% if page.subtitle %}
+          <p>{{ page.subtitle }}</p>
+        {% elsif page.url == '/' %}
+          <p>{{ site.subtitle }}</p>
+        {% endif %}
+      </div>
+    </header>
 
-    <!-- MAIN CONTENT -->
     <main id="main-content">
       {{ content }}
     </main>
 
-    <!-- FOOTER -->
     <div id="footer">
       <div class="container">
         <div class="row">
@@ -115,7 +104,6 @@
 
   </div>
 
-  <!-- Scripts -->
   <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/jquery.dropotron.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/jquery.scrolly.min.js' | relative_url }}"></script>
