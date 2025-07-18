@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Climate Dynamics Lab - Centre for Atmospheric Sciences, IIT Delhi
 ---
 
