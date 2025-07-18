@@ -1,34 +1,50 @@
-# _config.yml
-
 title: "Climate Dynamics Lab"
 email: "sandeep.sukumaran@cas.iitd.ac.in"
-description: >- # this means multi-line string
+description: >-
   The Climate Dynamics Lab at IIT Delhi focuses on monsoon dynamics,
-  Climate dynamics, Monsoon studies, and AI applications in atmospheric sciences.
+  climate variability, and AI applications in atmospheric sciences.
 
-# The base URL — if your site is served from a subfolder, e.g. username.github.io/repo
-baseurl: "climdynlab.github.io/"  # leave blank if using a user/organization site
+# The full URL of your site, no trailing slash
+url: "https://climdynlab.github.io"
 
-# The URL of your GitHub Pages site
-url: "https://climdynlab.github.io/<repo-name>"
+# For a user/org site, baseurl must be empty
+baseurl: ""  # IMPORTANT: no subpath for user/org site
 
 # Build settings
-theme: minima  # you can use GitHub’s default theme or your own
+theme: minima  # fallback theme
 markdown: kramdown
 
-# Exclude files from build if needed
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle
-  - vendor/cache
-  - vendor/gems
-  - vendor/ruby
+author:
+  name: "Climate Dynamics Lab"
+  email: "sandeep.sukumaran@cas.iitd.ac.in"
 
-# Plugins — GitHub Pages only supports these official plugins
+# Social handles (optional)
+social:
+  github: climdynlab
+  linkedin: your-linkedin-handle
+  researchgate: your-researchgate-handle
+
+# Plugins supported by GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Optional: Google Analytics or other configs can go here
+# Exclude files/folders from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - README.md
+
+# Defaults for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: pretty
+
+# Optional: Google Analytics or other configs
+# google_analytics: UA-XXXXXXXX-X
