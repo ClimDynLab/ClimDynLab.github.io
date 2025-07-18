@@ -5,12 +5,13 @@ subtitle: Get in touch with the Climate Dynamics Lab
 description: Contact details and location for the Climate Dynamics Lab, IIT Delhi.
 ---
 
-
 <!-- Main Content -->
 <section class="wrapper style1">
   <div class="container">
-        <div id="header">
-      <div class="inner">
+    <header class="major">
+      <h2>We'd love to hear from you</h2>
+    </header>
+
     <div class="row">
       <!-- Contact Form -->
       <div class="col-6 col-12-mobile">
