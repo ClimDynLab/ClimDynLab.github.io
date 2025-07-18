@@ -8,44 +8,41 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
   <noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
 </head>
-<body class="homepage is-preload">
+<body class="is-preload">
   <div id="page-wrapper">
 
-    <div id="header">
+    <!-- Navigation Bar -->
+    <nav id="nav">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
+        <li><a href="{{ '/people.html' | relative_url }}">People</a></li>
+        <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+        <li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
+        <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
+        <li><a href="{{ '/events.html' | relative_url }}">Events</a></li>
+        <li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
 
-      <div class="inner">
-        <header>
-          <h1><a href="{{ '/' | relative_url }}" id="logo">{{ site.title }}</a></h1>
-          <hr />
-          <p>{{ site.subtitle }}</p>
-        </header>
-        <footer>
-          <a href="#main-content" class="button circled scrolly">Explore</a>
-        </footer>
+    <!-- Page Header with left-aligned title -->
+    <header class="wrapper style1 special">
+      <div class="container" style="text-align: left;">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+          <p>{{ page.subtitle }}</p>
+        {% endif %}
       </div>
+    </header>
 
-      <nav id="nav">
-        <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
-          <li><a href="{{ '/people.html' | relative_url }}">People</a></li>
-          <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-          <li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
-          <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
-          <li><a href="{{ '/events.html' | relative_url }}">Events</a></li>
-          <li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
-          <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
-        </ul>
-      </nav>
-
-    </div>
-
+    <!-- Page Content -->
     {{ content }}
 
+    <!-- Footer -->
     <div id="footer">
       <div class="container">
         <div class="row">
-
           <section class="col-4 col-12-mobile">
             <header>
               <h2>Contact</h2>
@@ -74,7 +71,6 @@
               <li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
             </ul>
           </section>
-
         </div>
         <hr />
         <div class="row">
