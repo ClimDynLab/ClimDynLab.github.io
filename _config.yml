@@ -10,7 +10,7 @@ description: >- # this means multi-line string
 baseurl: ""  # leave blank if using a user/organization site
 
 # The URL of your GitHub Pages site
-url: "https://<your-github-username>.github.io/<repo-name>"
+url: "https://climdynlab.github.io/"
 
 # Build settings
 theme: minima  # you can use GitHub’s default theme or your own
