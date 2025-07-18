@@ -8,7 +8,7 @@ description: >-
 url: "https://climdynlab.github.io"
 
 # For a user/org site, baseurl must be empty
-baseurl: ""  # IMPORTANT: no subpath for user/org site
+baseurl: "climdynlab.github.io"  # IMPORTANT: no subpath for user/org site
 
 # Build settings
 theme: minima  # fallback theme
