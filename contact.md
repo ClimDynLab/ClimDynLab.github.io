@@ -30,28 +30,6 @@
 <body class="no-sidebar">
 <div id="page-wrapper">
 
-    <!-- Header -->
-    <div id="header">
-        <div class="inner">
-            <header>
-                <h1><a href="index.html" id="logo">Contact Us</a></h1>
-                <hr />
-                <p>Get in touch with the Climate Dynamics Lab</p>
-            </header>
-        </div>
-
-        <!-- Navigation -->
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li class="current"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
     <!-- Main -->
     <section class="wrapper style1">
         <div class="container">
