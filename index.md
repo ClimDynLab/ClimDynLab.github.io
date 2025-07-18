@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Climate Dynamics Lab - Centre for Atmospheric Sciences, IIT Delhi
 description: Climate Dynamics Lab at IIT Delhi focuses on Indian monsoon, climate change, and AI applications in atmospheric sciences.
 ---
