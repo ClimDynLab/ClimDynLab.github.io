@@ -1,16 +1,16 @@
 # _config.yml
 
 title: "Climate Dynamics Lab"
-email: "climate.lab@cas.iitd.ac.in"
+email: "sandeep.sukumaran@cas.iitd.ac.in"
 description: >- # this means multi-line string
   The Climate Dynamics Lab at IIT Delhi focuses on monsoon dynamics,
-  climate change, and AI applications in atmospheric sciences.
+  Climate dynamics, Monsoon studies, and AI applications in atmospheric sciences.
 
 # The base URL — if your site is served from a subfolder, e.g. username.github.io/repo
-baseurl: ""  # leave blank if using a user/organization site
+baseurl: "climdynlab.github.io/"  # leave blank if using a user/organization site
 
 # The URL of your GitHub Pages site
-url: "https://<your-github-username>.github.io/<repo-name>"
+url: "https://climdynlab.github.io/<repo-name>"
 
 # Build settings
 theme: minima  # you can use GitHub’s default theme or your own
