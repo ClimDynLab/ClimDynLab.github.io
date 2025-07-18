@@ -1,11 +1,13 @@
-title: "Climate Dynamics Lab"
-email: "sandeep.sukumaran@cas.iitd.ac.in"
+title: Climate Dynamics Lab
+email: sandeep.sukumaran@cas.iitd.ac.in
 description: >-
   The Climate Dynamics Lab at IIT Delhi focuses on monsoon dynamics,
   climate dynamics, monsoon studies, and AI applications in atmospheric sciences.
 
-url: "https://climdynlab.github.io"
-baseurl: ""  # MUST be empty for user/organization sites
+url: https://climdynlab.github.io
+baseurl: 
+back_to_top: true
+# MUST be empty for user/organization sites
 
 theme: minima  # or your custom theme if you use one
 markdown: kramdown
