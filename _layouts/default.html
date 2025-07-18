@@ -1,16 +1,18 @@
 <!DOCTYPE HTML>
 <!--
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Climate Dynamics Lab Template
+  Based on Helios by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 <head>
-	<title>Your Site Title</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="utf-8" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
 </head>
 <body class="homepage is-preload">
 	<div id="page-wrapper">
@@ -34,38 +36,22 @@
 			<nav id="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Dropdown</a>
-						<ul>
-							<li><a href="#">Item One</a></li>
-							<li><a href="#">Item Two</a></li>
-							<li><a href="#">Item Three</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Left Sidebar</a></li>
-					<li><a href="#">Right Sidebar</a></li>
-					<li><a href="#">No Sidebar</a></li>
+					<li><a href="{{ '/' | relative_url }}">Home</a></li>
+         				<li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
+					<li><a href="{{ '/people.html' | relative_url }}">People</a></li>	          
+					<li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+					<li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
+					<li><a href="{{ '/news.html' | relative_url }}">News</a></li>
+					<li><a href="{{ '/events.html' | relative_url }}">Events</a></li>
+					<li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
+					<li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
 				</ul>
 			</nav>
 
 		</div>
 
 		<!-- Main Content Placeholder -->
-		<div class="wrapper style2">
-			<article id="main-content" class="container special">
-				<!-- Replace below with your page’s main content -->
-				<header>
-					<h2>Your Page Title</h2>
-					<p>Your page subtitle or intro goes here.</p>
-				</header>
-				<p>
-					<!-- YOUR CONTENT HERE -->
-					Add your custom page text, images, embeds, etc.
-				</p>
-				<footer>
-					<a href="#" class="button">Call to Action</a>
-				</footer>
-			</article>
-		</div>
+		{{ content }}
 
 		<!-- Footer (Same as template) -->
 		<div id="footer">
