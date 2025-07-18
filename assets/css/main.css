@@ -3342,35 +3342,3 @@ input, select, textarea {
 					}
 
 	}
-/* === Custom Header & Nav Bar Styles === */
-
-#header {
-  background: #fff; /* Header background */
-  padding: 2rem 0;
-}
-
-#nav {
-  background: #005a9c; /* Change to your preferred nav bar color */
-}
-
-#nav ul {
-  display: flex;
-  justify-content: center; /* center the menu items */
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#nav ul li {
-  margin: 0 1rem;
-}
-
-#nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#nav ul li a:hover {
-  text-decoration: underline;
-}
