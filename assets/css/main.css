@@ -3342,3 +3342,10 @@ input, select, textarea {
 					}
 
 	}
+/* === Custom subpage banner === */
+.subpage-banner {
+  background: #33334d;   /* dark background example */
+  color: #fff;           /* white text for contrast */
+  padding: 4em 0;        /* vertical space, adjust as needed */
+  text-align: left;      /* aligns your title to the left */
+}
