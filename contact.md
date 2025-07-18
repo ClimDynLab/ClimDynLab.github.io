@@ -11,16 +11,6 @@ description: Contact details and location for the Climate Dynamics Lab, IIT Delh
   <div class="container">
         <div id="header">
       <div class="inner">
-        <header>
-          <h1><a href="{{ '/' | relative_url }}" id="logo">{{ Contact }}</a></h1>
-          <hr />
-          <p>{{ site.subtitle }}</p>
-        </header>
-      </div>
-    <header class="major">
-      <h2>We'd love to hear from you</h2>
-    </header>
-
     <div class="row">
       <!-- Contact Form -->
       <div class="col-6 col-12-mobile">
