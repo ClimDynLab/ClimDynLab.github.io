@@ -9,49 +9,49 @@
   <noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
 </head>
 
-<body class="is-preload">
+<body class="is-preload {% if page.url == '/' %}home{% endif %}">
   <div id="page-wrapper">
 
-    <!-- SITE HEADER: always shows -->
-    <div id="header">
-      <div class="inner">
-        <header>
-          <h1>
-            <a href="{{ '/' | relative_url }}" id="logo">
-              {% if page.url == '/' %}
-                {{ site.title }}
-              {% else %}
-                {{ page.title }}
-              {% endif %}
-            </a>
-          </h1>
-          <hr />
-          {% if page.url == '/' %}
+    <!-- HOME PAGE HEADER -->
+    {% if page.url == '/' %}
+      <div id="header">
+        <div class="inner">
+          <header>
+            <h1><a href="{{ '/' | relative_url }}" id="logo">{{ site.title }}</a></h1>
+            <hr />
             <p>{{ site.subtitle }}</p>
-          {% else %}
-            {% if page.subtitle %}
-              <p>{{ page.subtitle }}</p>
-            {% endif %}
-          {% endif %}
-        </header>
+          </header>
+        </div>
       </div>
+    {% endif %}
 
-      <!-- Navigation Bar -->
-      <nav id="nav">
-        <ul>
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
-          <li><a href="{{ '/people.html' | relative_url }}">People</a></li>
-          <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
-          <li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
-          <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
-          <li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
-          <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <!-- NAVIGATION -->
+    <nav id="nav">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
+        <li><a href="{{ '/people.html' | relative_url }}">People</a></li>
+        <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+        <li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
+        <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
+        <li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
+        <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
 
-    <!-- MAIN PAGE CONTENT -->
+    <!-- SUBPAGE BANNER HEADER -->
+    {% unless page.url == '/' %}
+      <header class="wrapper style1 special">
+        <div class="container" style="text-align: left;">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+            <p>{{ page.subtitle }}</p>
+          {% endif %}
+        </div>
+      </header>
+    {% endunless %}
+
+    <!-- MAIN CONTENT -->
     <main id="main-content">
       {{ content }}
     </main>
@@ -60,7 +60,6 @@
     <div id="footer">
       <div class="container">
         <div class="row">
-          <!-- Contact Info -->
           <section class="col-4 col-12-mobile">
             <header>
               <h2>Contact</h2>
@@ -69,7 +68,6 @@
             <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
           </section>
 
-          <!-- Links -->
           <section class="col-4 col-12-mobile">
             <header>
               <h2>Links</h2>
@@ -82,7 +80,6 @@
             </ul>
           </section>
 
-          <!-- Social -->
           <section class="col-4 col-12-mobile">
             <header>
               <h2>Follow</h2>
