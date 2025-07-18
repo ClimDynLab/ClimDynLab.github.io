@@ -1,18 +1,11 @@
 ---
 layout: default
 title: Contact
+subtitle: Get in touch with the Climate Dynamics Lab
 description: Contact details and location for the Climate Dynamics Lab, IIT Delhi.
 ---
 
-<!-- Banner -->
-<section id="banner">
-  <header>
-    <h2>Contact Us</h2>
-    <p>Get in touch with the Climate Dynamics Lab</p>
-  </header>
-</section>
-
-<!-- Main -->
+<!-- Main Content -->
 <section class="wrapper style1">
   <div class="container">
     <header class="major">
@@ -21,24 +14,24 @@ description: Contact details and location for the Climate Dynamics Lab, IIT Delh
 
     <div class="row">
       <!-- Contact Form -->
-      <div class="6u 12u(mobile)">
+      <div class="col-6 col-12-mobile">
         <section>
           <form method="post" action="#">
             <div class="row">
-              <div class="6u 12u(mobile)">
+              <div class="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Your Name" required />
               </div>
-              <div class="6u 12u(mobile)">
+              <div class="col-6 col-12-mobile">
                 <input type="email" name="email" placeholder="Your Email" required />
               </div>
             </div>
             <div class="row">
-              <div class="12u">
+              <div class="col-12">
                 <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
               </div>
             </div>
             <div class="row">
-              <div class="12u">
+              <div class="col-12">
                 <button type="submit" class="button">Send Message</button>
               </div>
             </div>
@@ -47,7 +40,7 @@ description: Contact details and location for the Climate Dynamics Lab, IIT Delh
       </div>
 
       <!-- Contact Info + Map -->
-      <div class="6u 12u(mobile)">
+      <div class="col-6 col-12-mobile">
         <section>
           <header>
             <h3>Visit Us</h3>
