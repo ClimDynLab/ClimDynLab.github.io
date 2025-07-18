@@ -3374,13 +3374,3 @@ input, select, textarea {
 #nav ul li a:hover {
   text-decoration: underline;
 }
-/* Add these rules to your assets/css/main.css */
-
-.page-header-aligned .container {
-    text-align: left !important; /* Use !important if default Helios styles are overriding */
-}
-
-.page-header-aligned .container h1,
-.page-header-aligned .container p {
-    text-align: left !important; /* Ensure children also align left */
-}
