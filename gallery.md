@@ -4,14 +4,6 @@ title: Gallery
 description: Photo gallery of the Climate Dynamics Lab at IIT Delhi showcasing research activities, fieldwork, and outreach.
 ---
 
-<!-- Banner -->
-<section id="banner">
-  <header>
-    <h2>Gallery</h2>
-    <p>Snapshots from our lab's research, outreach, and activities.</p>
-  </header>
-</section>
-
 <!-- Main Content -->
 <main id="main-content">
   <section class="wrapper style1">
