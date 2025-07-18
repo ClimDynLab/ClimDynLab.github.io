@@ -3342,3 +3342,45 @@ input, select, textarea {
 					}
 
 	}
+/* === Custom Header & Nav Bar Styles === */
+
+#header {
+  background: #fff; /* Header background */
+  padding: 2rem 0;
+}
+
+#nav {
+  background: #005a9c; /* Change to your preferred nav bar color */
+}
+
+#nav ul {
+  display: flex;
+  justify-content: center; /* center the menu items */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#nav ul li {
+  margin: 0 1rem;
+}
+
+#nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#nav ul li a:hover {
+  text-decoration: underline;
+}
+/* Add these rules to your assets/css/main.css */
+
+.page-header-aligned .container {
+    text-align: left !important; /* Use !important if default Helios styles are overriding */
+}
+
+.page-header-aligned .container h1,
+.page-header-aligned .container p {
+    text-align: left !important; /* Ensure children also align left */
+}
