@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | relative_url }}" /></noscript>
+</head>
+
+<body class="is-preload">
+  <div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <header>
+          <h1><a href="{{ '/' | relative_url }}" id="logo">{{ site.title }}</a></h1>
+          <hr />
+          <p>Centre for Atmospheric Sciences, IIT Delhi</p>
+        </header>
+        <footer>
+          <a href="#main-content" class="button circled scrolly">Explore</a>
+        </footer>
+      </div>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/research.html' | relative_url }}">Research</a></li>
+          <li><a href="{{ '/people.html' | relative_url }}">People</a></li>
+          <li><a href="{{ '/publications.html' | relative_url }}">Publications</a></li>
+          <li><a href="{{ '/gallery.html' | relative_url }}">Gallery</a></li>
+          <li><a href="{{ '/news.html' | relative_url }}">News</a></li>
+          <li><a href="{{ '/events.html' | relative_url }}">Events</a></li>
+          <li><a href="{{ '/lectures.html' | relative_url }}">Lectures</a></li>
+          <li><a href="{{ '/contact.html' | relative_url }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page content goes here -->
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Information -->
+          <section class="col-6 col-12-mobile">
+            <header>
+              <h2 class="icon solid fa-envelope circled"><span class="label">Contact</span></h2>
+            </header>
+            <ul class="divided">
+              <li>
+                <article class="contact-info">
+                  <h3>Email</h3>
+                  <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                </article>
+              </li>
+              <li>
+                <article class="contact-info">
+                  <h3>Address</h3>
+                  <p>Centre for Atmospheric Sciences<br>
+                  IIT Delhi, Hauz Khas<br>
+                  New Delhi - 110016, India</p>
+                </article>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Social Links -->
+          <section class="col-6 col-12-mobile">
+            <header>
+              <h2 class="icon solid fa-share-alt circled"><span class="label">Social</span></h2>
+            </header>
+            <div class="social-links">
+              <p>Connect with us on academic and professional networks:</p>
+              <ul class="icons">
+                <li><a href="https://scholar.google.com/citations?user=EXAMPLE" class="icon brands fa-google"><span class="label">Google Scholar</span></a></li>
+                <li><a href="https://www.linkedin.com/in/EXAMPLE" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://www.researchgate.net/profile/EXAMPLE" class="icon solid fa-book"><span class="label">ResearchGate</span></a></li>
+                <li><a href="https://github.com/EXAMPLE" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+              <ul class="menu">
+                <li>&copy; {{ site.title }}. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net" rel="noopener noreferrer">HTML5 UP</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="{{ '/assets/js/jquery.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/jquery.dropotron.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/jquery.scrolly.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/jquery.scrollex.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/browser.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/breakpoints.min.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/util.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
