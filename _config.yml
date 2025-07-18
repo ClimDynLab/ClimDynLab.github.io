@@ -2,40 +2,23 @@ title: "Climate Dynamics Lab"
 email: "sandeep.sukumaran@cas.iitd.ac.in"
 description: >-
   The Climate Dynamics Lab at IIT Delhi focuses on monsoon dynamics,
-  climate variability, and AI applications in atmospheric sciences.
+  climate dynamics, monsoon studies, and AI applications in atmospheric sciences.
 
-# The full URL of your site, no trailing slash
 url: "https://climdynlab.github.io"
+baseurl: ""  # MUST be empty for user/organization sites
 
-# For a user/org site, baseurl must be empty
-baseurl: "climdynlab.github.io"  # IMPORTANT: no subpath for user/org site
-
-# Build settings
-theme: minima  # fallback theme
+theme: minima  # or your custom theme if you use one
 markdown: kramdown
 
-author:
-  name: "Climate Dynamics Lab"
-  email: "sandeep.sukumaran@cas.iitd.ac.in"
-
-# Social handles (optional)
-social:
-  github: climdynlab
-  linkedin: your-linkedin-handle
-  researchgate: your-researchgate-handle
-
-# Plugins supported by GitHub Pages
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Exclude files/folders from build
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor/
-  - README.md
 
 # Defaults for pages
 defaults:
